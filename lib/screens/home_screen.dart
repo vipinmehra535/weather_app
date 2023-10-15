@@ -17,21 +17,42 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget getWeatherIcon(int code) {
     switch (code) {
       case >= 200 && < 300:
-        return Image.asset('assets/1.png');
+        return Image.asset(
+          'assets/1.png',
+          scale: 4,
+        );
       case >= 300 && < 400:
-        return Image.asset('assets/2.png');
+        return Image.asset(
+          'assets/2.png',
+          scale: 4,
+        );
       case >= 500 && < 600:
-        return Image.asset('assets/3.png');
+        return Image.asset(
+          'assets/3.png',
+          scale: 4,
+        );
       case >= 600 && < 700:
-        return Image.asset('assets/4.png');
+        return Image.asset(
+          'assets/4.png',
+          scale: 4,
+        );
       case >= 700 && < 800:
-        return Image.asset('assets/5.png');
+        return Image.asset(
+          'assets/5.png',
+          scale: 4,
+        );
       case == 800:
         return Image.asset('assets/6.png');
       case > 800 && <= 804:
-        return Image.asset('assets/7.png');
+        return Image.asset(
+          'assets/7.png',
+          scale: 4,
+        );
       default:
-        return Image.asset('assets/7.png');
+        return Image.asset(
+          'assets/7.png',
+          scale: 4,
+        );
     }
   }
 
@@ -57,7 +78,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: isBlackBackground ? Colors.black : Colors.blueAccent,
+      backgroundColor: isBlackBackground
+          ? const Color.fromARGB(255, 50, 49, 49)
+          : Colors.blueAccent,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
