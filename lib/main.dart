@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
                   body: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Please wait it's your getting location"),
+                      Text("Please wait it's getting your location"),
                       SizedBox(
                         height: 20,
                       ),
